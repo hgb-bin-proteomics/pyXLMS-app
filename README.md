@@ -18,17 +18,43 @@ Additionally, the web application can also be run locally or self-hosted. **This
 **sensitive data.** You can run the web app locally or self-hosted via:
 
 - Cloning the [pyXLMS GitHub repository](https://github.com/hgb-bin-proteomics/pyXLMS):
-  - `git clone https://github.com/hgb-bin-proteomics/pyXLMS.git`
-  - `cd pyXLMS`
-- Running the [streamlit](https://streamlit.io/) app locally:
-  - `cd gui`
-  - `pip install -r requirements.txt`
-  - `streamlit run streamlit_app.py`
+  - ```bash
+    git clone https://github.com/hgb-bin-proteomics/pyXLMS.git`
+    ```
+  - ```bash
+    cd pyXLMS
+    ```
+- **\[Recommended\]** Running the [streamlit](https://streamlit.io/) app via [uv](https://docs.astral.sh/uv/) locally:
+  - ```bash
+    cd gui
+    ```
+  - ```bash
+    pip install uv
+    ```
+  - ```bash
+    uv run -- streamlit run streamlit_app.py
+    ```
+- _or_ running the [streamlit](https://streamlit.io/) app natively locally:
+  - ```bash
+    cd gui
+    ```
+  - ```bash
+    pip install -r requirements.txt
+    ```
+  - ```bash
+    streamlit run streamlit_app.py
+    ```
 - _or_ running via [Docker](https://docs.docker.com/get-started/get-docker/) by building the image yourself:
-  - `docker build . -f Dockerfile -t pyxlms`
-  - `docker run -p 8501:8501 pyxlms`
+  - ```bash
+    docker build . -f Dockerfile -t pyxlms
+    ```
+  - ```bash
+    docker run -p 8501:8501 pyxlms
+    ```
 - _or_ by pulling the provided image from Docker Hub:
-  - `docker run -p 8501:8501 michabirklbauer/pyxlms:latest`
+  - ```bash
+    docker run -p 8501:8501 michabirklbauer/pyxlms:latest
+    ```
 
 ## Contact
 
