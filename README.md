@@ -5,12 +5,19 @@ Permalink to the web application for [pyXLMS](https://github.com/hgb-bin-proteom
 - For the source code of the web application please refer to [pyXLMS/gui](https://github.com/hgb-bin-proteomics/pyXLMS/tree/master/gui).
 - The web application is currently hosted at [http://pyxlms.projekte.fh-hagenberg.at/](http://pyxlms.projekte.fh-hagenberg.at/).
 - A backup server is running at [http://89.58.32.151/](http://89.58.32.151/).
-  - _Main server and backup server might not run the same pyXLMS version._
+  - _The main server will always run the latest stable pyXLMS version._
+  - _The main server and backup server might not run the same pyXLMS version._
+  - _The backup server might run an outdated or development version of pyXLMS._
+  - _The backup server is not guaranteed to be available at all times._
 
 ## Availability
 
 Both the main and backup server are provided as is and availability is not guaranteed! Computing resources are allocated on a first come, first served basis.
 Please note that no data is saved and any analysis only persists as long as your session is active in your browser!
+
+### Server Updates & Scheduled Downtimes
+
+Please refer to this [discussion](https://github.com/hgb-bin-proteomics/pyXLMS/discussions/194).
 
 ## Running Locally or Self-Hosting
 
